@@ -1,0 +1,35 @@
+{
+  "name": "minesweeper",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gestalt": "^57.2.3",
+    "jest": "^28.1.0",
+    "mobx": "^6.6.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.3.2",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-gestalt": "^57.2.8",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.52.2",
+    "vite": "^2.9.9"
+  }
+}
