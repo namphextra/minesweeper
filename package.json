@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://namphextra.github.io/minesweeper/",
+  "homepage": "https://namphextra.github.io/minesweeper",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
@@ -14,12 +14,14 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
     "gestalt": "^57.2.3",
     "jest": "^28.1.0",
-    "mobx": "^6.6.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.3.2",
