@@ -63,7 +63,9 @@ export default function Game() {
                     onClick={() => onClick({ x: keyColumn, y: keyRow, column })}
                     onContextMenu={(e) => onRightClick({ x: keyColumn, y: keyRow, e })}>
                     <Flex alignItems="center" justifyContent="center" width="100%" height="100%">
-                      {column.isMine && <Icon icon="smiley-outline" color="error" />}
+                      {!column.hidden && column.isMine && (
+                        <Icon icon="smiley-outline" color="error" />
+                      )}
                       {!column.hidden && (
                         <span
                           className={`${

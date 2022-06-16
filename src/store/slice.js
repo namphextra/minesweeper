@@ -26,10 +26,8 @@ export const slice = createSlice({
     setShowModalEndGame: (state, action) => {
       state.showModalEndGame = action.payload;
     },
-    startCountTime: (state) => {
-      setTimeout(() => {
-        state.time += 1;
-      }, 1000);
+    setTime: (state, action) => {
+      state.time += action.payload;
     },
     resetTime: (state) => {
       state.time = 0;
@@ -70,7 +68,7 @@ export const {
   setFetching,
   setMatrix,
   setShowModalEndGame,
-  startCountTime,
+  setTime,
   resetTime,
   setGameEnded,
   setGameEndedStatus,
